@@ -62,8 +62,7 @@ public class DiscreteCopyNumberController {
           String molecularProfileId,
       @Parameter(required = true, description = "Sample List ID e.g. acc_tcga_all") @RequestParam
           String sampleListId,
-      @Parameter(description = "Type of the copy number event")
-          @RequestParam(defaultValue = "ALL")
+      @Parameter(description = "Type of the copy number event") @RequestParam(defaultValue = "ALL")
           DiscreteCopyNumberEventType discreteCopyNumberEventType,
       @Parameter(description = "Level of detail of the response")
           @RequestParam(defaultValue = "SUMMARY")
@@ -115,8 +114,7 @@ public class DiscreteCopyNumberController {
       @Parameter(required = true, description = "Molecular Profile ID e.g. acc_tcga_gistic")
           @PathVariable
           String molecularProfileId,
-      @Parameter(description = "Type of the copy number event")
-          @RequestParam(defaultValue = "ALL")
+      @Parameter(description = "Type of the copy number event") @RequestParam(defaultValue = "ALL")
           DiscreteCopyNumberEventType discreteCopyNumberEventType,
       @Parameter(
               required = true,

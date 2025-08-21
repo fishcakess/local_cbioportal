@@ -537,8 +537,12 @@ public class StudyViewController {
 
     // Ensure shallow CNAs (HETLOSS/GAIN) are included for study homepage CNA genes
     if (alterationFilter != null && alterationFilter.getCopyNumberAlterationEventTypes() != null) {
-      alterationFilter.getCopyNumberAlterationEventTypes().put(org.cbioportal.legacy.model.CNA.HETLOSS, true);
-      alterationFilter.getCopyNumberAlterationEventTypes().put(org.cbioportal.legacy.model.CNA.GAIN, true);
+      alterationFilter
+          .getCopyNumberAlterationEventTypes()
+          .put(org.cbioportal.legacy.model.CNA.HETLOSS, true);
+      alterationFilter
+          .getCopyNumberAlterationEventTypes()
+          .put(org.cbioportal.legacy.model.CNA.GAIN, true);
     }
 
     List<SampleIdentifier> sampleIdentifiers =
